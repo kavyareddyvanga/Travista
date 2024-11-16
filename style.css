@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
-
 * {
     padding: 0;
     margin: 0;
@@ -20,27 +18,30 @@ body {
 }
 
 .main {
-    height: 100%;
+    height: 115%;
     width: 100%;
     background-image: url("https://wallpapercave.com/wp/RHFKI0k.jpg");
     background-size: cover;
     background-position: center;
+    background-color: #111;
+    overflow-x: hidden;
 }
 
 .nav {
 
     background-color: #11111186;
 
-    height: 80px;
+    height: 100px;
     padding: 20px;
     align-items: center;
     display: flex;
     justify-content: space-between;
     color: white;
+    font-size: 200px;
 }
 
-.logo {
-    font-family: aloevera;
+.nav h1 {
+    font-family: "aloevera";
     font-size: 32px;
 
 }
@@ -73,38 +74,44 @@ body {
 
 @media (min-width: 768px) {
     .menu {
-        right: -40%;
-        width: 40%;
+        right: -30%;
+        width: 30%;
     }
 }
 
-.menu h1 {
-    font-size: 50px;
+.menu a {
+    font-size: 42px;
     margin-left: 40px;
     font-weight: 500;
+    color: white;
+    text-decoration: none;
 }
 
-.menu i {
+.menu a:hover {
+    font-size: 42px;
+    margin-left: 40px;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+
+}
+
+.icon {
     top: 0%;
     left: 5%;
-
+    display: flex;
+    justify-content: end;
     color: white;
     font-size: 32px;
 }
 
 
-.home-page {
-    height: 100%;
-    width: 100%;
-
-
-
-}
 
 .text-card {
     color: white;
-
+    margin-bottom: 5vw;
     font-family: "Roboto";
+    margin-top: 30vh;
 
 
 }
@@ -132,5 +139,405 @@ body {
     border-color: white;
     color: white;
     font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
+}
+
+.list-img {
+    margin-top: 5%;
+}
+
+
+.each-img img {
+    height: 8rem;
+
+    background-position: center;
+    background-size: cover;
+}
+
+.about {
+    background-color: black;
+}
+
+.about-section {
+    color: #f0f0f0;
+
+    font-family: gilroy;
+
+
+    box-shadow: 0px 4px 8px rgba(232, 227, 227, 0.922);
+
+}
+
+.about-section h1 {
+    font-size: 36px;
+    border-color: #f0f0f0;
+}
+
+.about-section p {
+    font-size: 18px;
+    color: #d3d3d3;
+}
+
+.about-us-btn {
+    align-items: center;
+
+}
+
+.about-us-btn button {
+    height: 50px;
+    width: 165px;
+    text-align: left;
+
+    border-radius: 50px;
+    padding: 5px 15px;
+    border-style: solid;
+    border-width: 1px;
+    font-size: 16px;
+    border-color: #f0f0f0;
+    color: #f0f0f0;
+    font-weight: 600;
+    font-family: "Roboto";
+    background-color: black;
+
+}
+
+.span-ele {
+    height: 2px;
+    width: 5px;
+    background-color: #f0f0f0;
+    border-radius: 50px;
+    font-size: 12px;
+}
+
+.about-us-img {
+    height: 280px;
+    transition: transform .2s ease-in-out;
+
+}
+
+.about-img {
+    overflow: hidden;
+
+
+
+}
+
+.about-us-img:hover {
+    transform: scale(1.2);
+
+
+}
+
+.text-card {
+    color: #d3d3d3;
+}
+
+.cursor {
+    height: 15px;
+    width: 15px;
+    background-color: white;
+    border-radius: 50%;
+    position: fixed;
+    text-align: center;
+    align-items: center;
+    font-size: 5px;
+    display: flex;
+    z-index: 9;
+}
+
+.service-section {
+    background-color: black;
+   
+
+}
+.card-container{
+    height:330px;
+    width:100%;
+    perspective: 800px;
+}
+.service-card {
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 6px;
+    border-color: #f0f0f0;
+    position: relative;
+    height: 100%;
+    width: 100%;
+   
+    
+   
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    
+    
+}
+
+.card-container:hover > .service-card{
+    cursor: pointer;
+    transform: rotateY(180deg);
+}
+.service-card-front-1{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    backface-visibility: hidden; 
+}
+.service-card-front-2{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    backface-visibility: hidden; 
+}
+.service-card-front-3{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    backface-visibility: hidden; 
+}
+.service-card-front-4{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    backface-visibility: hidden; 
+}
+.service-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    backface-visibility: hidden; 
+}
+
+.service-card-front-1 {
+    background-image: url('https://awsbizz.sgp1.cdn.digitaloceanspaces.com/wtl/rpyQx0tpjnQxwORJnGr1kbCp9n5Gm8EkQSmcQ2WH.png');
+    background-color: cover;
+    background-position: center; 
+    
+    
+}
+.service-card-front-2 {
+    background-image: url('https://www.airindia.com/adobe/dynamicmedia/deliver/dm-aid--b272e89d-5320-4d67-9a0b-8ac809ada8eb/baggage-guidelines.webp');
+    background-color: cover;
+    background-position: center; 
+    
+    
+}
+.service-card-front-3 {
+    background-image: url("https://img.freepik.com/premium-photo/photo-collage-various-travel-destinations-around-world_36682-217944.jpg");
+    background-color: cover;
+    background-position: center; 
+    
+    
+}
+.service-card-front-4 {
+    background-image: url('https://img.freepik.com/free-vector/service-24-7-concept-illustration_114360-7720.jpg?semt=ais_hybrid');
+    background-color: cover;
+    background-position: center; 
+    
+    
+}
+.service-card-back{
+    transform: rotateY(180deg);
+}
+
+
+
+.services-heading {
+    font-size: 36px;
+    color: #f0f0f0;
+    font-family: gilroy;
+
+}
+
+.services-description {
+    font-size: 18px;
+    color: #d3d3d3;
+    font-family: gilroy;
+
+}
+
+.service-card-heading {
+    margin-top: 20px;
+    font-size: 18px;
+    font-family: gilroy;
+    font-weight: 500;
+    color: #f0f0f0;
+
+}
+
+.service-card-description {
+
+    font-size: 14px;
+    font-family: gilroy;
+    color: #d3d3d3;
+}
+
+.service-card img {
+    border-radius: 5px;
+    height: 8rem;
+}
+#string{
+    height:160px;
+    width:100%;
+    background-color: black;
+}
+.popular-section{
+    background-color: black;
+}
+.popular-heading{
+    color:#f0f0f0;
+    font-size:36px;
+    font-family: gilroy;
+
+}
+.popular-card{
+    border-radius: 20px;
+   
+    border-color: #f0f0f0;
+    background-size: cover;
+    background-position: center;
+    height:300px;
+}
+.popular-card:hover{
+    transition: transform 0.3s ease-in-out;
+    transform: scale(1.1) ;
+}
+.popular-card-text h1{
+    color:white;
+    font-size:24px;
+    font-family: gilroy;
+}
+.popular-card-text h1:hover{
+    transition: 0.3s;
+    font-size:28px;
+    font-family: gilroy;
+}
+.popular-card-text button{
+    height: 40px;
+    width:100px;
+    background-color: #f0f0f0;
+    color:black;
+    border-radius: 30px;
+    border-style: none;
+    font-size: 16px;
+}
+
+.packages{
+    background-color: black;
+}
+.packages-heading{
+    font-size: 36px;
+    color: #f0f0f0;
+    font-family: gilroy;
+}
+.packages-card {
+    border-style: solid;
+    border-color: #f0f0f0;
+    border-width: 1px;
+    overflow: hidden;
+    
+
+}
+.packages-card img{
+   height:200px;
+   transition: transform 0.1s ease-in-out;
+   
+}
+.packages-card img:hover{
+    transform: scale(1.2);
+}
+.packages-card-text h5{
+    font-size: 24px;
+    color: #f0f0f0;
+    font-family: gilroy;
+}
+.packages-card-text i{
+    color:#f0f0f0;
+} 
+.packages-card-text button{
+    height:60px;
+    width:120px;
+    color:#f0f0f0;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #f0f0f0;
+    background-color: black;
+    font-size:18px;
+
+}
+.packages-card-text button:hover{
+    color: black;
+    background-color: #f0f0f0;
+}
+.des{
+    font-size: 14px;
+    color: #d3d3d3;
+    font-family: gilroy;
+}
+.price{
+    color: #f0f0f0;
+    font-size: 24px;
+    font-family: gilroy;
+}
+.org-price{
+    color: #f0f0f0;
+    text-decoration: line-through;
+    font-size: 16px;
+    font-family: gilroy;
+}
+.gallery{
+    background-color: black;
+}
+
+.gallery-heading{
+    font-size: 36px;
+    color: #f0f0f0;
+    font-family: gilroy;
+}
+.footer{
+    background-color: #101010;
+}
+.comp-info h1{
+    font-family: aloevera;
+    font-size:42px;
+    color: white;
+}
+.socials{
+    gap:20px;
+}
+.socials-icon{
+    height:50px;
+    width:50px;
+    border-radius: 50%;
+    padding:14px;
+    background-color: black;
+}
+.icon{
+    font-size:24px;
+    color:  #9aa5b1;
+}
+.comp-info p{
+    font-size:18px;
+    color:#9aa5b1;
+    font-family: roboto;
+    margin-top: 10px;
+}
+.copy-right{
+    gap:10px;
+}
+.copy-right p{
+    font-size:18px;
+    color:#9aa5b1;
+
+}
+.copy-right i{
+    font-size:28px;
+    color:#9aa5b1
 }
