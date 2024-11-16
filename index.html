@@ -10,77 +10,421 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/8a6eb161a6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
 </head>
 
 <body>
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- <nav class="navbar navbar-expand-lg navbar-dark  fixed-top">
-        <div class="container">
-
-            <a class="navbar-brand" id="logo" >Travista</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav ml-auto">
-                <a id="nav1"class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-                <a id="nav2"class="nav-link" href="#">About</a>
-                <a id="nav3"class="nav-link" href="#">Popular</a>
-                <a id="nav4"class="nav-link" href="#">Explore</a>
-                
-            </div>
-            </div>
-        </div>
-    </nav> -->
-    <div class="main">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-12">
-                    <div class="nav  fixed-top">
-                        <h1 class="logo ml-5">Travista</h1>
-                        <i class="ri-menu-3-line mr-5"></i>
-                    </div>
-                </div>
-
-                <div class=" col-12 w-100 w-md-30 ">
-                    <div class="menu d-none">
-                        <i class="ri-close-circle-line"></i>
-                        <h1>Home</h1>
-                        <h1>About</h1>
-                        <h1>Popular</h1>
-                        <h1>Explore</h1>
-                    </div>
-                </div>
-            </div>
-        </div>
-    
-
-        <div class="home-page d-flex flex-column justify-content-center">
-            <div class="container  ">
+    <div id="webpage">
+        <div class="cursor"></div>
+        <div class="main">
+            <div class="container-fluid">
                 <div class="row">
-                    <div class="col-12 ">
-                        <div class="text-card d-none">
-                            <h3 class="home-welcome-msg">Welcome to Travista</h3>
-                            <h1 class="home-heading">Explore <br>The World</h1>
+                    <div class="col-12">
+                        <div class="nav  fixed-top">
+                            <h1 class="logo ml-5">Travista</h1>
+                            <i class="ri-menu-3-line mr-5 "></i>
+                        </div>
+                    </div>
+                    <div class="col-12 w-100 w-md-30 fixed-top ml-auto">
+                        <div class="menu  d-none">
+                            <div class="mb-5 icon">
+                                <i class="ri-close-circle-line  "></i>
+                            </div>
+                            <div class="d-flex flex-column">
+                                <a href="#home">Home</a>
+                                <a href="#about">About</a>
+                                <a href="#services">Our Services</a>
+                                <a href="#popular">Popular</a>
+                                <a href="#packages">Explore</a>
+                                <a href="#gallery">Gallery</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="home-page justify-content-end " id="home">
+                <div class="container-fluid ">
+                    <div class="row ">
+                        <div class="col-12  ">
+                            <div class="text-card ml-5   ">
+                                <h3 class="home-welcome-msg">Welcome to Travista</h3>
+                                <h1 class="home-heading">Explore <br>The World</h1>
+                                <p class="home-description">Live the trips exploring the world,discover paradise,islands,<br>mountains and much more, get your trip now.</p>
+                                <button class="journey-button">Start your Journey</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row list-img d-flex justify-content-start ">
+                        
+                        <div class="col-12  col-lg-2  ">
+                            <div class="each-img  d-none d-lg-block">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMtfsmWMfuI5WVw1RcZuHW6se9C8oGXgH_7w&s" class="w-100">
+                            </div>
+                        </div>
+                        <div class="col-12  col-lg-2 ">
+                            <div class="each-img  d-none d-lg-block">
+                                <img src="https://images.takeshape.io/1f1d0876-be74-4b33-99c8-6ac93f1d70db/dev/4468e4af-526e-4ed6-a0c1-a0dc7673cef3/nicolo-di-giovanni-535450-unsplash.png?auto=compress%2Cformat&w=1440" class="w-100">
+                            </div>
+                        </div>
+                        <div class="col-12  col-lg-2 ">
+                            <div class="each-img  d-none d-lg-block ">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2qRytBr1-tZmzFg7Teoj7DxJIfPVnKX9J9kisT2NrqrlWDxu8VH-RkqIZ2MO0Npp8uFk&usqp=CAU" class="w-100">
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-2 ">
+                            <div class="each-img d-none d-lg-block ">
+                                <img src="https://media.istockphoto.com/id/625006196/photo/sunrise-on-a-tropical-island-palm-trees-on-sandy-beach.jpg?s=612x612&w=0&k=20&c=qGNG4XX4d3SNPDgLgM0GpdEtcPhyldWzQTd38KoC1X8=" class="w-100">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="about " id="about">
+            <div class="container p-5">
+                <div class="row">
+                    <div class="col-12 col-md-5 order-md-2 p-3 ">
+                        <div class="text-center about-img ">
+                            <img src="https://pictures.alignable.com/eyJidWNrZXQiOiJhbGlnbmFibGV3ZWItcHJvZHVjdGlvbiIsImtleSI6InNlcnZpY2VzL3BpY3R1cmVzL29yaWdpbmFsLzE0MzY4ODkvR2VuZXNpc0x1eHVyeUFkLmpwZyIsImVkaXRzIjp7ImV4dHJhY3QiOnsibGVmdCI6NjksInRvcCI6NDU5LCJ3aWR0aCI6MTIwNiwiaGVpZ2h0Ijo3NTN9LCJyZXNpemUiOnsid2lkdGgiOjU4MCwiaGVpZ2h0IjozNjJ9LCJleHRlbmQiOnsidG9wIjowLCJib3R0b20iOjAsImxlZnQiOjAsInJpZ2h0IjowLCJiYWNrZ3JvdW5kIjp7InIiOjI1NSwiZyI6MjU1LCJiIjoyNTUsImFscGhhIjoxfX19fQ==" class="about-us-img w-100  ">
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-7 order-md-1 p-3 ">
+                        <div class="about-section shadow  ">
+                            <h1>About Us</h1>
+                            <p> Explore the world your way with us.From hidden gems to popular destinations, we bring you authentic experiences and sustainable travel options. Trust us to turn your journey into an unforgettable story.</p>
+                            <div class="about-us-btn">
+                                <button>Explore Travista <span class="span-ele"> w</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div id="services" class="service-section ">
+            <div class="container pl-5">
+                <div class="row">
+                    <div class="col-12 p-3 ">
+                        <h1 class="services-heading">Our Services</h1>
+                        <p class="services-description">Travista is a user-friendly travel platform that simplifies flight, hotel, and tour bookings. It offers personalized recommendations to enhance every travel experience.</p>
+                    </div>
+                    <div class="col-11 col-md-6 col-lg-3 mb-3 ">
+                        <div class="card-container">
+                            <div class=" service-card text-center  ">
+                                <div class="service-card-front-1 " >
+                                </div>
+                                <div class="service-card-back p-3 " >
+                                    <img src="https://i.ibb.co/vJXL6mJ/create-your-customized-travel-itinerary.jpg" alt="create-your-customized-travel-itinerary" class="w-100">
+                                    <h2 class="service-card-heading">Customized Travel Packages</h2>
+                                    <p class="service-card-description">Personalized itineraries designed to match your preferences and needs.</p>
+                                </div>  
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-11 col-md-6 col-lg-3 mb-3 ">
+                        <div class="card-container">
+                            <div class=" service-card text-center  ">
+                                <div class="service-card-front-2 " >
+                                </div>
+                                <div class="service-card-back p-3 " >
+                                    <img src="https://thumbs.dreamstime.com/b/hotel-rooms-8146308.jpg" class="w-100">
+                                    <h2 class="service-card-heading">Flight & Accommodation Booking</h2>
+                                    <p class="service-card-description">Convenient and seamless booking services for flights, hotels, and more.</p>
+                                </div>  
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-11 col-md-6 col-lg-3 mb-3 ">
+                        <div class="card-container">
+                            <div class=" service-card text-center  ">
+                                <div class="service-card-front-3 " >
+                                </div>
+                                <div class="service-card-back p-3 " >
+                                    <img src="https://media.istockphoto.com/id/477372378/photo/travel-collage-world-images.jpg?s=612x612&w=0&k=20&c=f58flJv08W5A9NAn2t4XFmd8Z_T2UwNc8dPdK-xkxc8=" class="w-100">
+                                    <h2 class="service-card-heading">Local Tours & Experiences</h2>
+                                    <p class="service-card-description">Curated activities to immerse you in authentic, local culture.</p>
+                                </div>  
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-11 col-md-6 col-lg-3 mb-3 ">
+                        <div class="card-container">
+                            <div class=" service-card text-center  ">
+                                <div class="service-card-front-4 " >
+                                </div>
+                                <div class="service-card-back p-3 " >
+                                    <img src="https://img.freepik.com/free-vector/24-hours-7-days-everyday-helpdesk-service-background_1017-54447.jpg?semt=ais_hybrid" alt="create-your-customized-travel-itinerary" class="w-100">
+                                    <h2 class="service-card-heading">24/7 Customer Support</h2>
+                                    <p class="service-card-description">Round-the-clock assistance to make your trip worry-free.</p>
+                                </div>  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="popular-section " id="popular">
+            <div class="container p-5">
+                <div class="row">
+                    <div class="col-12 mb-4">
+                        <h1 class="popular-heading">Popular</h1>
+                    </div>
+                    
+                    
+                    <div class="col-12 col-md-6 col-lg-3 mb-4">
+                        <div class="popular-card d-flex flex-column justify-content-end " style="background-image: url('https://i.ytimg.com/vi/KLw3Q2Rqvhg/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDz_gz2eGSq8HA-XDr4RxM3DqDjZQ')">
+                            <div class="popular-card-text p-3">
+                                <h1 >Paris</h1>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 mb-4">
+                        <div class="popular-card d-flex flex-column justify-content-end " style="background-image: url('https://wanderlustcrew.com/wp-content/uploads/2018/02/Paris-Day-Trips-Geneva.jpg')">
+                            <div class="popular-card-text p-3">
+                                <h1 >Switzerland</h1>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 mb-4">
+                        <div class="popular-card d-flex flex-column justify-content-end " style="background-image: url('https://www.koreattrack.com/images/namsan-park-pink-flowers-tower.jpg')">
+                            <div class="popular-card-text p-3">
+                                <h1 >Seoul</h1>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 mb-4">
+                        <div class="popular-card d-flex flex-column justify-content-end " style="background-image: url('https://static.toiimg.com/thumb/112313348/Tower-Bridge-in-London.jpg?width=1200&height=900')">
+                            <div class="popular-card-text p-3">
+                                <h1 >London</h1>
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="packages" id="packages">
+            <div class="container p-5">
+                <div class="row">
+                    <div class="col-12 mb-3">
+                        <h1 class="packages-heading">Packages</h1>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 mb-3">
+                        <div class="packages-card  ">
+                            <img src="https://www.khyberhotels.com/blog/wp-content/uploads/2023/10/winter-kashmir.jpg" class="w-100">
+                            <div class="packages-card-text mt-2 p-3">
+                                <div class="d-flex flex-row">
+                                    <i class="fa-solid fa-location-dot mt-1 mr-2"></i>
+                                    <h5>Kashmir</h5>
+                                </div>
+                                <p class="des">Kashmir is a beautiful paradise with stunning landscapes, lakes, and mountains.</p>
+                                <div class="d-flex flex-row">
+                                    <i class="fa-solid fa-star "></i>
+                                    <i class="fa-solid fa-star ml-1"></i>
+                                    <i class="fa-solid fa-star ml-1 "></i>
+                                    <i class="fa-regular fa-star ml-1"></i>
+                                    <i class="fa-regular fa-star ml-1"></i>
+                                </div>
+                                <div class="d-flex flex-row mt-2">
+                                    <p class="price">$50</p>
+                                    <p class="org-price mt-2 ml-2">$150</p>
+                                    
+                                </div>
+                                <button>Book Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 mb-3">
+                        <div class="packages-card  ">
+                            <img src="https://img.travelnaut.com/web/db/photose/location/as/kr/seoul/d9b7aa6254d59fff7eaeda77ca87ab2b.jpeg?format=webp&width=3840&quality=75" class="w-100">
+                            <div class="packages-card-text mt-2 p-3">
+                                <div class="d-flex flex-row">
+                                    <i class="fa-solid fa-location-dot mt-1 mr-2"></i>
+                                    <h5>Seoul</h5>
+                                </div>
+                                <p class="des">Seoul blends rich history,  vibrant culture, and stunning landmarks like Namsan Tower.</p>
+                                <div class="d-flex flex-row">
+                                    <i class="fa-solid fa-star "></i>
+                                    <i class="fa-solid fa-star ml-1"></i>
+                                    <i class="fa-solid fa-star ml-1 "></i>
+                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                    <i class="fa-regular fa-star ml-1"></i>
+                                </div>
+                                <div class="d-flex flex-row mt-2">
+                                    <p class="price">$80</p>
+                                    <p class="org-price mt-2 ml-2">$190</p>
+                                    
+                                </div>
+                                <button>Book Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 mb-3">
+                        <div class="packages-card  ">
+                            <img src="https://res.cloudinary.com/dtljonz0f/image/upload/gc-v1/london/AdobeStock_177268385_0.jpeg" class="w-100">
+                            <div class="packages-card-text mt-2 p-3">
+                                <div class="d-flex flex-row">
+                                    <i class="fa-solid fa-location-dot mt-1 mr-2"></i>
+                                    <h5>London</h5>
+                                </div>
+                                <p class="des">London is a city of rich history, iconic landmarks, and diverse neighborhoods.</p>
+                                <div class="d-flex flex-row">
+                                    <i class="fa-solid fa-star "></i>
+                                    <i class="fa-solid fa-star ml-1"></i>
+                                    <i class="fa-solid fa-star ml-1 "></i>
+                                    <i class="fa-solid fa-star ml-1"></i>
+                                    <i class="fa-regular fa-star ml-1"></i>
+                                </div>
+                                <div class="d-flex flex-row mt-2">
+                                    <p class="price">$150</p>
+                                    <p class="org-price mt-2 ml-2">$250</p>
+                                    
+                                </div>
+                                <button>Book Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 mb-3">
+                        <div class="packages-card  ">
+                            <img src="https://dr7f10k1l6bnm.cloudfront.net/wp-content/uploads/2024/06/geneva.jpg%E2%80%9D" class="w-100">
+                            <div class="packages-card-text mt-2 p-3">
+                                <div class="d-flex flex-row">
+                                    <i class="fa-solid fa-location-dot mt-1 mr-2"></i>
+                                    <h5>Switzeland</h5>
+                                </div>
+                                <p class="des">Switzerland offers stunning landscapes, charming villages, and world-famous chocolate and watches.</p>
+                                <div class="d-flex flex-row">
+                                    <i class="fa-solid fa-star "></i>
+                                    <i class="fa-solid fa-star ml-1"></i>
+                                    <i class="fa-solid fa-star ml-1 "></i>
+                                    <i class="fa-solid fa-star ml-1"></i>
+                                    <i class="fa-solid fa-star ml-1"></i>
+                                </div>
+                                <div class="d-flex flex-row mt-2">
+                                    <p class="price">$200</p>
+                                    <p class="org-price mt-2 ml-2">$350</p>
+                                </div>
+                                <button>Book Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 mb-3">
+                        <div class="packages-card  ">
+                            <img src="https://www.travelandleisure.com/thmb/3XD9JkxUtO1j-NRKbGdSwaY8EhM=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/TAL-shopping-street-paris-PARISTAX0124-04f2935d5fea4c73ae6ca561ab4db965.jpg" class="w-100">
+                            <div class="packages-card-text mt-2 p-3">
+                                <div class="d-flex flex-row">
+                                    <i class="fa-solid fa-location-dot mt-1 mr-2"></i>
+                                    <h5>Paris</h5>
+                                </div>
+                                <p class="des">Paris is renowned for its iconic landmarks, rich history, art, fashion, culture, and vibrant city atmosphere.</p>
+                                <div class="d-flex flex-row">
+                                    <i class="fa-solid fa-star "></i>
+                                    <i class="fa-solid fa-star ml-1"></i>
+                                    <i class="fa-solid fa-star ml-1 "></i>
+                                    <i class="fa-solid fa-star ml-1"></i>
+                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                </div>
+                                <div class="d-flex flex-row mt-2">
+                                    <p class="price">$150</p>
+                                    <p class="org-price mt-2 ml-2">$250</p>
+                                    
+                                </div>
+                                <button>Book Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 mb-3">
+                        <div class="packages-card  ">
+                            <img src="https://www.wealthmanagement.com/sites/wealthmanagement.com/files/las-vegas-casino-revenue.jpg" class="w-100">
+                            <div class="packages-card-text mt-2 p-3">
+                                <div class="d-flex flex-row">
+                                    <i class="fa-solid fa-location-dot mt-1 mr-2"></i>
+                                    <h5>Las Vegas</h5>
+                                </div>
+                                <p class="des">Las Vegas is famous for its vibrant nightlife, casinos, entertainment, luxury resorts, and world-class dining.</p>
+                                <div class="d-flex flex-row">
+                                    <i class="fa-solid fa-star "></i>
+                                    <i class="fa-solid fa-star ml-1"></i>
+                                    <i class="fa-solid fa-star ml-1 "></i>
+                                    <i class="fa-solid fa-star ml-1"></i>
+                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                </div>
+                                <div class="d-flex flex-row mt-2">
+                                    <p class="price">$170</p>
+                                    <p class="org-price mt-2 ml-2">$200</p>
+                                    
+                                </div>
+                                <button>Book Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-                            <p class="home-description">Live the trips exploring the world,discover paradise,islands,<br>mountains and much more, get your trip now.</p>
-
-                            <button class="journey-button">Start your Journey</button>
-
+        </div>
+        <div class="gallery" id="gallery">
+            <div class="container p-5">
+                <div class="row" >
+                    <div class="col-12 mb-3 ">
+                        <h1 class="gallery-heading">Gallery</h1>
+                    </div>
+                </div>
+                <div class="row" style="background-color: white;">
+                    
+                    <div class="col-12 col-md-3  mt-3">
+                        <img src="https://www.travelandleisure.com/thmb/wsA6EXFuYkqtuJGLbQWw05-cwPs=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/lake-como-MOSTBEAUTIFUL0921-cb08f3beff1041e4beefc67b5e956b23.jpg" class="w-100 lake">
+                        <img src="https://hips.hearstapps.com/hbz.h-cdn.co/assets/16/16/1461265325-santorini-gettyimages-107741204.jpg?crop=1.0xw:1xh;center,top&resize=980:*" class="w-100 mt-3 palace">
+                    </div>
+                    <div class="col-12 col-md-4 mt-3" >
+                        <img src="https://www.prettywildworld.com/wp-content/uploads/2018/09/most-visited-tourist-attractions-in-europe-eiffel-tower-paris-france.jpg" class="w-100 tower">
+                        
+                    </div>
+                    <div class="col-12 col-md-3 mt-3" >
+                        <img src="https://cdn.shopify.com/s/files/1/0319/8721/files/Santorini-Greece.jpg?v=1692093384" class="w-100 ">
+                        <img src="https://admin.viatravelers.com/wp-content/uploads/2015/07/vietnam-halong-bay.jpeg" class="w-100 mt-4">
+                        <img src="https://ceoworld.biz/wp-content/uploads/2022/05/4-Places-In-The-World-You-Must-See.jpg"class="w-100 mt-4">
+                    </div>
+                    <div class="col-12 col-md-2 mt-3">
+                        <img src="https://hips.hearstapps.com/hmg-prod/images/anse-source-dargent-beach-royalty-free-image-1570204897.jpg?crop=0.447xw:1.00xh;0.0731xw,0&resize=980:*" class="w-100 rock"/>
+                        <img src="https://img.freepik.com/free-photo/sunset-desert-landscape-wallpaper_1409-5518.jpg"class='w-100 mt-3'>
+                        <img src="https://p16-pu-sign-useast8.tiktokcdn-us.com/tos-useast5-p-0068-tx/019809285bd34546bd7a6ecc3e93bdd5~tplv-photomode-zoomcover:720:720.jpeg?lk3s=81f88b70&x-expires=1731837600&x-signature=MgaO52el%2BoZWmDYW76y2ioihDh8%3D&shp=81f88b70&shcp=-" class="w-100 mt-3 mb-3 beach">
+                    </div>
+            </div>
+        </div>
+        
+        <div class="footer" id="footer">
+            <div class="container p-5">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <div class="comp-info ">
+                            <h1>Travista</h1>
+                            <div class="socials d-flex flex-row justify-content-center">
+                                <div class="socials-icon">
+                                    <i class="fa-brands fa-google icon"></i>
+                                </div>
+                                <div class="socials-icon">
+                                    <i class="fa-brands fa-pinterest-p icon"></i>
+                                </div>
+                                <div class="socials-icon">
+                                    <i class="fa-brands fa-instagram icon"></i>
+                                </div>
+                                <div class="socials-icon">
+                                    <i class="fa-brands fa-facebook-f icon"></i>
+                                </div>
+                            </div>
+                            <p>Vijaya Nagar, New Delhi</p>
+                        </div>
+                    </div>
+                    <div class="col-12 text-center">
+                        <div class="copy-right d-flex flex-row justify-content-center" >
+                            <i class="fa-regular fa-copyright"></i>
+                            <p>All Rights Reserved</p>
                         </div>
                     </div>
                 </div>
@@ -88,10 +432,13 @@
         </div>
     </div>
 
+    
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script src="script.js"></script>
+
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
